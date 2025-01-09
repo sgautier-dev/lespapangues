@@ -41,7 +41,7 @@ export default function Purpose() {
 			</div>
 			<div className="bg-white lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
 				<Image
-					alt="expériences aqua dance flow"
+					alt="Raison d'être, collège les Papangues"
 					src={heroImg}
 					className="aspect-[3/2] object-cover lg:aspect-auto lg:size-full"
 					width={1280}

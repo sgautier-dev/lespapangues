@@ -32,7 +32,7 @@ export default function Values() {
 
 			{/* Content */}
 			<Image
-				alt="expériences aqua dance flow"
+				alt="Nos valeurs, collège les Papangues"
 				src={heroImg}
 				className="absolute inset-0 -z-10 size-full object-cover"
 				width={1280}
