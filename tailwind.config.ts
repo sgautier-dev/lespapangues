@@ -7,6 +7,9 @@ export default {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
+		backgroundImage: {
+			"bg-img": "url('/images/bg-img.jpg')",
+		},
 		extend: {
 			colors: {
 				background: "var(--background)",
