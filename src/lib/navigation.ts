@@ -1,6 +1,6 @@
 export const navigation = [
 	{ name: "Collège", href: "/college" },
-	{ name: "Valeurs", href: "#" },
+	{ name: "Valeurs", href: "/valeurs" },
 	{ name: "Convictions", href: "#" },
 	{ name: "Pédagogie", href: "#" },
 	{ name: "Équipe", href: "#" },
