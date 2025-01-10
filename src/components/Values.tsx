@@ -26,7 +26,7 @@ const values = [
 
 export default function Values() {
 	return (
-		<div className="relative isolate overflow-hidden bg-gray-900 mt-8 py-24 sm:py-32">
+		<div className="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-32">
 			{/* Overlay */}
 			<div className="absolute inset-0 bg-black/50"></div>
 
