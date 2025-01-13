@@ -63,7 +63,7 @@ const social = [
 
 export default function Footer() {
 	return (
-		<footer>
+		<footer className="bg-custBlue">
 			<div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
 				<nav
 					aria-label="Footer"
@@ -73,7 +73,7 @@ export default function Footer() {
 						<a
 							key={item.name}
 							href={item.href}
-							className="text-gray-600 hover:text-gray-900"
+							className="text-white hover:text-gray-400"
 						>
 							{item.name}
 						</a>
@@ -84,14 +84,14 @@ export default function Footer() {
 						<a
 							key={item.name}
 							href={item.href}
-							className="text-gray-600 hover:text-gray-800"
+							className="text-white hover:text-gray-400"
 						>
 							<span className="sr-only">{item.name}</span>
 							<item.icon aria-hidden="true" className="size-6" />
 						</a>
 					))}
 				</div>
-				<p className="mt-10 text-center text-sm/6 text-gray-600">
+				<p className="mt-10 text-center text-sm/6 text-white">
 					Copyright &copy; {new Date().getFullYear()}. Les Papangues. Tous
 					droits réservés.
 				</p>

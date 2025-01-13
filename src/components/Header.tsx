@@ -5,23 +5,28 @@ import { Dialog, DialogPanel } from "@headlessui/react"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { navigation } from "@/lib/navigation"
 import Link from "next/link"
+import Image from "next/image"
+import logo from "@/images/icononly_transparent_nobuffer.png"
 
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
 	return (
-		<header>
+		<header className="bg-custBlue">
 			<nav
 				aria-label="Global"
 				className="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
 			>
 				<div className="flex lg:flex-1">
 					<Link href="/" className="-m-1.5 p-1.5">
-						<span className="sr-only">Your Company</span>
-						<img
-							alt=""
-							src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+						<span className="sr-only">Les Papangues</span>
+						<Image
+							alt="Collège les Papangues"
+							src={logo}
 							className="h-8 w-auto"
+							width={1280}
+							height={475}
+							priority
 						/>
 					</Link>
 				</div>
@@ -29,7 +34,7 @@ export default function Header() {
 					<button
 						type="button"
 						onClick={() => setMobileMenuOpen(true)}
-						className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+						className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
 					>
 						<span className="sr-only">Open main menu</span>
 						<Bars3Icon aria-hidden="true" className="size-6" />
@@ -40,14 +45,14 @@ export default function Header() {
 						<a
 							key={item.name}
 							href={item.href}
-							className="text-sm/6 font-semibold text-gray-900"
+							className="text-sm/6 font-semibold text-white"
 						>
 							{item.name}
 						</a>
 					))}
 				</div>
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end">
-					<a href="#" className="text-sm/6 font-semibold text-gray-900">
+					<a href="#" className="text-sm/6 font-semibold text-white">
 						Contact <span aria-hidden="true">&rarr;</span>
 					</a>
 				</div>
@@ -61,11 +66,14 @@ export default function Header() {
 				<DialogPanel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
 					<div className="flex items-center justify-between">
 						<Link href="/" className="-m-1.5 p-1.5">
-							<span className="sr-only">Your Company</span>
-							<img
-								alt=""
-								src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+							<span className="sr-only">Les Papangues</span>
+							<Image
+								alt="Collège les Papangues"
+								src={logo}
 								className="h-8 w-auto"
+								width={1280}
+								height={475}
+								priority
 							/>
 						</Link>
 						<button
