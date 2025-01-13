@@ -3,7 +3,7 @@ export const navigation = [
 	{ name: "Valeurs", href: "/valeurs" },
 	{ name: "Convictions", href: "/convictions" },
 	{ name: "Pédagogie", href: "/pedagogie" },
-	{ name: "Équipe", href: "#" },
+	{ name: "Équipe", href: "/equipe" },
 	{ name: "Lieu", href: "#" },
 	{ name: "Infos Utiles", href: "#" },
 ]
