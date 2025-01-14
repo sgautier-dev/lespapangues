@@ -1,5 +1,5 @@
 import Image from "next/image"
-import sectionImg from "@/images/Bibliothèque.jpg"
+import sectionImg from "@/images/Bibliotheque.jpg"
 
 export default function Exigence() {
 	return (

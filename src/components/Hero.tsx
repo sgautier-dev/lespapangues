@@ -1,5 +1,5 @@
 import Image from "next/image"
-import heroImg from "@/images/Adolescents étoile_by Pexels.jpg"
+import heroImg from "@/images/Adolescents_etoile_by Pexels.jpg"
 import Link from "next/link"
 
 export default function Hero() {

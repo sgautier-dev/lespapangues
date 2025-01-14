@@ -1,6 +1,6 @@
 import Image from "next/image"
 import sectionImg1 from "@/images/Fraises_Pexels.jpg"
-import sectionImg2 from "@/images/Petit-déjeuner_Pexels.jpg"
+import sectionImg2 from "@/images/Petit-dejeuner_Pexels.jpg"
 import sectionImg3 from "@/images/Cabane_Irina.jpg"
 export default function Hands() {
 	return (

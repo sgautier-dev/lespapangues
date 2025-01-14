@@ -1,5 +1,5 @@
 import Image from "next/image"
-import sectionImg from "@/images/Réunion projet'_StockSnap.jpg"
+import sectionImg from "@/images/Reunion projet_StockSnap.jpg"
 
 export default function Projects() {
 	return (
