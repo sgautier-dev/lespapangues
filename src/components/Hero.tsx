@@ -32,9 +32,9 @@ export default function Hero() {
 							>
 								Découvrir le collège
 							</Link>
-							<a href="#" className="text-sm/6 font-semibold text-gray-900">
+							<Link href="/contact" className="text-sm/6 font-semibold text-gray-900">
 								Nous contacter <span aria-hidden="true">→</span>
-							</a>
+							</Link>
 						</div>
 					</div>
 					<Image
