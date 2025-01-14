@@ -1,6 +1,6 @@
 import Education from "@/components/Education"
 import Exigence from "@/components/Exigence"
-import Fullfilment from "@/components/Fulfillment"
+import Fulfillment from "@/components/Fulfillment"
 import Hands from "@/components/Hands"
 import Projects from "@/components/Projects"
 import Responsabilities from "@/components/Responsabilities"
@@ -15,7 +15,7 @@ export default function educationPage() {
 			<Exigence />
 			<Projects />
 			<Hands />
-			<Fullfilment />
+			<Fulfillment />
 			<Responsabilities />
 		</main>
 	)

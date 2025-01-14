@@ -5,27 +5,16 @@ import {
 	BuildingLibraryIcon,
 	GlobeAltIcon,
 } from "@heroicons/react/20/solid"
+import content from "@/data/content.json"
+import { ComponentType, SVGProps } from "react"
 
-const features = [
-	{
-		name: "Superficie et type de bâtiment.",
-		description:
-			"Maison à louer. Minimum 150m² de surface intérieure. Idéalement de plain-pied.",
-		icon: HomeModernIcon,
-	},
-	{
-		name: "Espaces essentiels.",
-		description:
-			"Grands espaces modulables pour les cours et les projets. Coin calme / bibliothèque pour favoriser la concentration. Salles spécifiques modulables (sciences, numérique, arts). Cuisine et espace restauration.",
-		icon: BuildingLibraryIcon,
-	},
-	{
-		name: "Extérieur et nature.",
-		description:
-			"Terrain de minimum 500m². Un potager et des espaces verts. Possibilité d’accueillir des animaux",
-		icon: GlobeAltIcon,
-	},
-]
+// Définition explicite des icônes associées aux noms des features
+const featureIcons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
+	"Superficie et type de bâtiment.": HomeModernIcon,
+	"Espaces essentiels.": BuildingLibraryIcon,
+	"Extérieur et nature.": GlobeAltIcon,
+}
+
 export default function Location() {
 	return (
 		<div className="overflow-hidden py-24 sm:py-32">
@@ -34,29 +23,35 @@ export default function Location() {
 					<div className="lg:pt-4 lg:pr-8">
 						<div className="lg:max-w-lg">
 							<h1 className="text-base/7 font-semibold text-sky-600">
-								Recherche active d’un espace
+								{content.location.title}
 							</h1>
 							<p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-								Un lieu à la hauteur de notre projet
+								{content.location.subtitle}
 							</p>
 							<p className="mt-6 text-lg/8 text-gray-600">
-								Nous sommes en recherche active d’un espace pour accueillir le
-								Collège Montessori Les Papangues. <br /> 📍 Localisation : le
-								Nord de La Réunion (Saint-Denis - Sainte-Marie)
+								{content.location.description}
+							</p>
+							<p className="mt-6 text-lg/8 text-gray-600">
+								{content.location.location}
 							</p>
 							<dl className="mt-10 max-w-xl space-y-8 text-base/7 text-gray-600 lg:max-w-none">
-								{features.map((feature) => (
-									<div key={feature.name} className="relative pl-9">
-										<dt className="inline font-semibold text-gray-900">
-											<feature.icon
-												aria-hidden="true"
-												className="absolute top-1 left-1 size-5 text-sky-600"
-											/>
-											{feature.name}
-										</dt>{" "}
-										<dd className="inline">{feature.description}</dd>
-									</div>
-								))}
+								{content.location.features.map((feature) => {
+									const Icon =
+										featureIcons[feature.name as keyof typeof featureIcons] ||
+										HomeModernIcon
+									return (
+										<div key={feature.name} className="relative pl-9">
+											<dt className="inline font-semibold text-gray-900">
+												<Icon
+													aria-hidden="true"
+													className="absolute top-1 left-1 size-5 text-sky-600"
+												/>
+												{feature.name}
+											</dt>{" "}
+											<dd className="inline">{feature.description}</dd>
+										</div>
+									)
+								})}
 							</dl>
 						</div>
 					</div>

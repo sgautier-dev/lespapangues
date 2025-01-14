@@ -1,7 +1,8 @@
 import Image from "next/image"
 import sectionImg from "@/images/Musiciennes_Fredy Martinez Enamorado.jpg"
+import content from "@/data/content.json"
 
-export default function Fullfilment() {
+export default function Fulfillment() {
 	return (
 		<div className="relative">
 			<Image
@@ -16,21 +17,16 @@ export default function Fullfilment() {
 				<div className="px-6 pt-16 pb-24 sm:pt-20 sm:pb-32 lg:col-start-2 lg:px-8 lg:pt-32">
 					<div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
 						<h2 className="text-base/8 font-semibold text-sky-600">
-							Épanouissement personnel
+							{content.fulfillment.title}
 						</h2>
 						<p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-							Développer sa sensibilité et sa créativité
+							{content.fulfillment.subtitle}
 						</p>
-						<p className="mt-6 text-lg/8 text-gray-600">
-							L’art et l’artisanat développent la sensibilité esthétique et
-							émotionnelle, la créativité et le potentiel des adolescents.
-						</p>
-						<p className="mt-6 text-lg/8 text-gray-600">
-							L’éducation sensorielle, cœur de la pédagogie Montessori, favorise
-							la connaissance de soi et la résilience. Nous proposons aussi des
-							ateliers de développement personnel, de communication et de
-							philosophie.
-						</p>
+						{content.fulfillment.paragraphs.map((paragraph, index) => (
+							<p key={index} className="mt-6 text-lg/8 text-gray-600">
+								{paragraph}
+							</p>
+						))}
 					</div>
 				</div>
 			</div>

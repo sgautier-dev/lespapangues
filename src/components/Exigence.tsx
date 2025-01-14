@@ -1,5 +1,6 @@
 import Image from "next/image"
 import sectionImg from "@/images/Bibliotheque.jpg"
+import content from "@/data/content.json"
 
 export default function Exigence() {
 	return (
@@ -16,22 +17,16 @@ export default function Exigence() {
 				<div className="px-6 pt-16 pb-24 sm:pt-20 sm:pb-32 lg:col-start-2 lg:px-8 lg:pt-32">
 					<div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
 						<h2 className="text-base/8 font-semibold text-sky-600">
-							L&apos;exigence académique
+							{content.exigence.title}
 						</h2>
 						<p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-							Un accompagnement académique personnalisé
+							{content.exigence.subtitle}
 						</p>
-						<p className="mt-6 text-lg/8 text-gray-600">
-							Nous proposons naturellement un accompagnement académique
-							personnalisé, par des spécialistes et des éducateurs Montessori,
-							en respectant, a minima, les attendus du Socle Commun.
-						</p>
-						<p className="mt-6 text-lg/8 text-gray-600">
-							Les apprentissages sont abordés sans évaluation compétitive. Un
-							compte-rendu des acquis est établi pour les parents. Nous
-							préparons les élèves aux épreuves du Brevet des collèges (DNB) en
-							candidat libre.
-						</p>
+						{content.exigence.paragraphs.map((paragraph, index) => (
+							<p key={index} className="mt-6 text-lg/8 text-gray-600">
+								{paragraph}
+							</p>
+						))}
 					</div>
 				</div>
 			</div>

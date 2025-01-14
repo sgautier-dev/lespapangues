@@ -1,28 +1,6 @@
 import Image from "next/image"
 import heroImg from "@/images/Mains coeur_Pexels.jpg"
-
-const values = [
-	{
-		id: 1,
-		name: "Développer l’estime de soi et oser révéler son potentiel.",
-		value: "Confiance",
-	},
-	{
-		id: 2,
-		name: "Prendre conscience de soi et assumer ses choix.",
-		value: "Responsabilité",
-	},
-	{
-		id: 3,
-		name: "S’émerveiller et apprendre de la diversité du monde.",
-		value: "Ouverture",
-	},
-	{
-		id: 4,
-		name: "Trouver sa place et agir pour un avenir meilleur.",
-		value: "Contribution",
-	},
-]
+import content from "@/data/content.json"
 
 export default function Values() {
 	return (
@@ -54,14 +32,14 @@ export default function Values() {
 				</div>
 				<div className="mx-auto max-w-2xl lg:mx-0 lg:max-w-xl">
 					<h2 className="text-base/8 font-semibold text-sky-400">
-						Nos valeurs
+						{content.values.title}
 					</h2>
 					<p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
-						Ouvrons ensemble la voie vers un monde de liens, de paix et d’amour
+						{content.values.subtitle}
 					</p>
 				</div>
 				<dl className="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-10 text-white sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mx-0 lg:max-w-none lg:grid-cols-4">
-					{values.map((value) => (
+					{content.values.list.map((value) => (
 						<div
 							key={value.id}
 							className="flex flex-col gap-y-3 border-l border-white/10 pl-6"

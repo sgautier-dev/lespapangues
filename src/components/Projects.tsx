@@ -1,5 +1,6 @@
 import Image from "next/image"
 import sectionImg from "@/images/Reunion projet_StockSnap.jpg"
+import content from "@/data/content.json"
 
 export default function Projects() {
 	return (
@@ -16,21 +17,16 @@ export default function Projects() {
 				<div className="px-6 pt-16 pb-24 sm:pt-20 sm:pb-32 lg:col-end-2 lg:px-8 lg:pt-32">
 					<div className="mx-auto max-w-2xl lg:mr-0 lg:max-w-lg">
 						<h2 className="text-base/8 font-semibold text-sky-600">
-							Apprentissage par projet
+							{content.projects.title}
 						</h2>
 						<p className="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
-							Apprendre en réalisant des projets
+							{content.projects.subtitle}
 						</p>
-						<p className="mt-6 text-lg/8 text-gray-600">
-							La pédagogie de Maria Montessori repose sur le projet. Chaque
-							projet est une opportunité d’apprentissage transversal, tant
-							académique que pratique.
-						</p>
-						<p className="mt-6 text-lg/8 text-gray-600">
-							Les adolescents choisissent leurs projets, et l’équipe pédagogique
-							les accompagne pour les structurer et les approfondir,
-							individuellement ou collectivement.
-						</p>
+						{content.projects.paragraphs.map((paragraph, index) => (
+							<p key={index} className="mt-6 text-lg/8 text-gray-600">
+								{paragraph}
+							</p>
+						))}
 					</div>
 				</div>
 			</div>

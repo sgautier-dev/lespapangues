@@ -1,47 +1,36 @@
+import content from "@/data/content.json";
+
 const people = [
 	{
 		name: "Guillaume",
 		role: "Co-Fondateur",
 		imageUrl:
 			"https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-		// xUrl: "#",
 		linkedinUrl: "#",
 	},
 	// More people...
-]
+];
 
-export default function Team() {
+export default function Founders() {
 	return (
 		<div className="bg-custBlue py-24 sm:py-32">
 			<div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
 				<div className="mx-auto max-w-2xl">
 					<h1 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
-						Les Fondateurs
+						{content.founders.title}
 					</h1>
-					<p className="mt-6 text-lg/8 text-gray-400 text-left">
-						Nous sommes trois parents dont les enfants suivent une scolarité en
-						école Montessori à Saint-Denis et Sainte-Marie. <br /> Conscients
-						qu’aucun collège Montessori ne correspondait à nos attentes dans le
-						Nord de l’île, nous avons décidé de créer nous-mêmes un
-						établissement qui incarne nos valeurs et offre aux adolescents une
-						pédagogie innovante, respectueuse de leur rythme et de leur
-						développement personnel.
-					</p>
-					<p className="mt-6 text-lg/8 text-gray-400">
-						✨ Notre objectif : permettre aux jeunes de s’épanouir, développer
-						leur autonomie et leur créativité, pour devenir des adultes
-						éclairés, acteurs du monde de demain.
-					</p>
+					{content.founders.paragraphs.map((paragraph, index) => (
+						<p key={index} className="mt-6 text-lg/8 text-gray-400">
+							{paragraph}
+						</p>
+					))}
 				</div>
 				<ul
 					role="list"
 					className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
 				>
 					{people.map((person) => (
-						<li
-							key={person.name}
-							className="rounded-2xl bg-gray-800 px-8 py-10"
-						>
+						<li key={person.name} className="rounded-2xl bg-gray-800 px-8 py-10">
 							<img
 								alt=""
 								src={person.imageUrl}
@@ -52,22 +41,6 @@ export default function Team() {
 							</h2>
 							<p className="text-sm/6 text-gray-400">{person.role}</p>
 							<ul role="list" className="mt-6 flex justify-center gap-x-6">
-								{/* <li>
-									<a
-										href={person.xUrl}
-										className="text-gray-400 hover:text-gray-300"
-									>
-										<span className="sr-only">X</span>
-										<svg
-											fill="currentColor"
-											viewBox="0 0 20 20"
-											aria-hidden="true"
-											className="size-5"
-										>
-											<path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
-										</svg>
-									</a>
-								</li> */}
 								<li>
 									<a
 										href={person.linkedinUrl}
@@ -94,5 +67,5 @@ export default function Team() {
 				</ul>
 			</div>
 		</div>
-	)
+	);
 }

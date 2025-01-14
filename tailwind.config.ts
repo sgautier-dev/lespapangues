@@ -47,6 +47,9 @@ export default {
 				slide: "slide 750ms ease-in-out",
 				translate: "translate 2s ease-in-out forwards",
 			},
+			fontFamily: {
+				quicksand: ["var(--font-quicksand)"],
+			},
 		},
 	},
 	plugins: [],
