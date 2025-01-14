@@ -7,10 +7,10 @@ export default {
 		"./src/app/**/*.{js,ts,jsx,tsx,mdx}",
 	],
 	theme: {
-		backgroundImage: {
-			"bg-img": "url('/images/bg-img.jpg')",
-		},
 		extend: {
+			backgroundImage: {
+				"bg-img": "url('/images/bg-img.jpg')",
+			},
 			colors: {
 				background: "var(--background)",
 				foreground: "var(--foreground)",
