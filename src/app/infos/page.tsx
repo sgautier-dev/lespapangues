@@ -2,6 +2,10 @@ import Infos from "@/components/Infos"
 import InfosHero from "@/components/InfosHero"
 import Cta from "@/components/CtaSection"
 
+export const metadata = {
+	title: "Infos utiles",
+}
+
 export default function infosPage() {
 	return (
 		<main className="flex flex-col justify-center mx-auto">
