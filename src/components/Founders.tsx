@@ -15,9 +15,9 @@ export default function Team() {
 		<div className="bg-custBlue py-24 sm:py-32">
 			<div className="mx-auto max-w-7xl px-6 text-center lg:px-8">
 				<div className="mx-auto max-w-2xl">
-					<h2 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
+					<h1 className="text-4xl font-semibold tracking-tight text-balance text-white sm:text-5xl">
 						Les Fondateurs
-					</h2>
+					</h1>
 					<p className="mt-6 text-lg/8 text-gray-400 text-left">
 						Nous sommes trois parents dont les enfants suivent une scolarité en
 						école Montessori à Saint-Denis et Sainte-Marie. <br /> Conscients
@@ -47,9 +47,9 @@ export default function Team() {
 								src={person.imageUrl}
 								className="mx-auto size-48 rounded-full md:size-56"
 							/>
-							<h3 className="mt-6 text-base/7 font-semibold tracking-tight text-white">
+							<h2 className="mt-6 text-base/7 font-semibold tracking-tight text-white">
 								{person.name}
-							</h3>
+							</h2>
 							<p className="text-sm/6 text-gray-400">{person.role}</p>
 							<ul role="list" className="mt-6 flex justify-center gap-x-6">
 								{/* <li>

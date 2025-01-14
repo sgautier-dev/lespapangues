@@ -15,9 +15,9 @@ export default function Contact() {
 			<div className="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">
 				<div className="px-6 lg:px-8">
 					<div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
-						<h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+						<h1 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
 							Une question ? Envie d’échanger avec nous ?
-						</h2>
+						</h1>
 						<p className="mt-2 text-lg/8 text-gray-600">
 							Nous sommes à votre disposition pour toute question sur notre
 							pédagogie, l’inscription, ou notre recherche de lieu. N’hésitez
