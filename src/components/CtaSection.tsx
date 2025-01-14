@@ -1,11 +1,15 @@
 import Link from "next/link"
 
-export default function LocationCta() {
+interface CtaProps {
+	title: string
+}
+
+export default function CtaSection({ title }: CtaProps) {
 	return (
 		<div className="bg-custBlue">
 			<div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:flex lg:items-center lg:justify-between lg:px-8">
 				<h2 className="max-w-2xl text-4xl font-semibold tracking-tight text-white sm:text-5xl">
-					Vous connaissez un lieu adapté ? <br />
+					{title}
 				</h2>
 				<div className="mt-10 flex items-center gap-x-6 lg:mt-0 lg:shrink-0">
 					<Link
