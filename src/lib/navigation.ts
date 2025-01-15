@@ -1,9 +1,11 @@
+import content from "@/data/content.json"
+
 export const navigation = [
-	{ name: "Collège", href: "/college" },
-	{ name: "Valeurs", href: "/valeurs" },
-	{ name: "Convictions", href: "/convictions" },
-	{ name: "Pédagogie", href: "/pedagogie" },
-	{ name: "Équipe", href: "/equipe" },
-	{ name: "Lieu", href: "/lieu" },
-	{ name: "Infos Utiles", href: "/infos" },
+	{ name: content.menu.college, href: "/college" },
+	{ name: content.menu.values, href: "/valeurs" },
+	{ name: content.menu.convictions, href: "/convictions" },
+	{ name: content.menu.pedagogy, href: "/pedagogie" },
+	{ name: content.menu.team, href: "/equipe" },
+	{ name: content.menu.location, href: "/lieu" },
+	{ name: content.menu.infos, href: "/infos" },
 ]

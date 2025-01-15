@@ -6,10 +6,9 @@ import {
 	GlobeAltIcon,
 } from "@heroicons/react/20/solid"
 import content from "@/data/content.json"
-import { ComponentType, SVGProps } from "react"
 
 // Définition explicite des icônes associées aux noms des features
-const featureIcons: Record<string, ComponentType<SVGProps<SVGSVGElement>>> = {
+const featureIcons = {
 	"Superficie et type de bâtiment.": HomeModernIcon,
 	"Espaces essentiels.": BuildingLibraryIcon,
 	"Extérieur et nature.": GlobeAltIcon,

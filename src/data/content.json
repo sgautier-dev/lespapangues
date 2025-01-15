@@ -1,4 +1,14 @@
 {
+	"menu": {
+		"college": "Collège",
+		"values": "Valeurs",
+		"convictions": "Convictions",
+		"pedagogy": "Pédagogie",
+		"team": "Équipe",
+		"location": "Lieu",
+		"infos": "Infos Utiles"
+	},
+
 	"hero": {
 		"title": "Les Papangues",
 		"subtitle": "Apprendre . Explorer . Créer",
@@ -26,6 +36,9 @@
 		},
 		"location": {
 			"title": "Vous connaissez un lieu adapté ?"
+		},
+		"infos": {
+			"title": "Une question ? Besoin d’informations ?"
 		}
 	},
 	"purpose": {
@@ -149,5 +162,30 @@
 				"description": "Terrain de minimum 500m². Un potager et des espaces verts. Possibilité d’accueillir des animaux."
 			}
 		]
+	},
+	"infosHero": {
+		"title": "Tout ce qu’il faut savoir pour nous rejoindre",
+		"description": "Vous souhaitez en savoir plus sur l’organisation et le fonctionnement du Collège Montessori Les Papangues ? Retrouvez ici les informations essentielles : calendrier scolaire, horaires de classe et conditions d’inscription."
+	},
+	"infos": {
+		"title": "Informations Clés",
+		"features": [
+			{
+				"name": "Calendrier scolaire",
+				"description": "Nous respectons le calendrier académique de La Réunion. Les élèves suivent le rythme des vacances scolaires fixé par l’académie."
+			},
+			{
+				"name": "Horaires de classe",
+				"description": "Les élèves ont cours du lundi au vendredi. Mercredi matin uniquement."
+			},
+			{
+				"name": "Tarification et conditions d’inscription",
+				"description": "Les modalités d’inscription et les tarifs seront précisés prochainement."
+			}
+		]
+	},
+	"contact": {
+		"title": "Une question ? Envie d’échanger avec nous ?",
+		"description": "Nous sommes à votre disposition pour toute question sur notre pédagogie, l’inscription, ou notre recherche de lieu. N’hésitez pas à nous écrire, nous serons ravis d’échanger avec vous !"
 	}
 }

@@ -1,5 +1,6 @@
 import Image from "next/image"
 import heroImg from "@/images/Voie lactée_Evgeni Tcherkasski.jpg"
+import content from "@/data/content.json"
 export default function Contact() {
 	return (
 		<div className="relative">
@@ -16,12 +17,10 @@ export default function Contact() {
 				<div className="px-6 lg:px-8">
 					<div className="mx-auto max-w-xl lg:mx-0 lg:max-w-lg">
 						<h1 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-							Une question ? Envie d’échanger avec nous ?
+							{content.contact.title}
 						</h1>
 						<p className="mt-2 text-lg/8 text-gray-600">
-							Nous sommes à votre disposition pour toute question sur notre
-							pédagogie, l’inscription, ou notre recherche de lieu. N’hésitez
-							pas à nous écrire, nous serons ravis d’échanger avec vous !
+							{content.contact.description}
 						</p>
 						<form action="#" method="POST" className="mt-16">
 							<div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
