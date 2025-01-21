@@ -6,7 +6,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline"
 import { navigation } from "@/lib/navigation"
 import Link from "next/link"
 import Image from "next/image"
-import logo from "@/images/icononly_transparent_nobuffer.png"
+import logo from "@/images/fulllogo_transparent_nobuffer.png"
 
 export default function Header() {
 	const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
@@ -23,9 +23,9 @@ export default function Header() {
 						<Image
 							alt="Collège les Papangues"
 							src={logo}
-							className="h-8 w-auto"
+							className="h-16 w-auto"
 							width={1280}
-							height={475}
+							height={681}
 							priority
 						/>
 					</Link>
@@ -70,9 +70,9 @@ export default function Header() {
 							<Image
 								alt="Collège les Papangues"
 								src={logo}
-								className="h-8 w-auto"
+								className="h-16 w-auto"
 								width={1280}
-								height={475}
+								height={681}
 								priority
 							/>
 						</Link>
