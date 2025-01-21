@@ -1,11 +1,12 @@
+import Image from "next/image"
 import content from "@/data/content.json"
+import team1 from "@/images/christina-wocintechchat-com-c-mgSuxqpzA-unsplash.jpg"
 
 const people = [
 	{
 		name: "Cécile Grondin",
 		role: "Professeur",
-		imageUrl:
-			"https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+		imageUrl: team1,
 		bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
 		linkedinUrl: "#",
 	},
@@ -35,10 +36,12 @@ export default function Team() {
 							key={person.name}
 							className="flex flex-col gap-10 pt-12 sm:flex-row"
 						>
-							<img
-								alt=""
+							<Image
+								alt="Equipe, collège les Papangues"
 								src={person.imageUrl}
 								className="aspect-4/5 w-52 flex-none rounded-2xl object-cover"
+								width={1920}
+								height={1282}
 							/>
 							<div className="max-w-xl flex-auto">
 								<h3 className="text-lg/8 font-semibold tracking-tight text-gray-900">

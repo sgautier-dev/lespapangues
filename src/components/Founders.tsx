@@ -1,15 +1,33 @@
-import content from "@/data/content.json";
+import Image from "next/image"
+import content from "@/data/content.json"
+import guillaume from "@/images/Guillaume.jpg"
+import laurence from "@/images/Laurence.jpeg"
+import boris from "@/images/Boris Benet.jpg"
 
 const people = [
 	{
 		name: "Guillaume",
 		role: "Co-Fondateur",
-		imageUrl:
-			"https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
-		linkedinUrl: "#",
+		imageUrl: guillaume,
+		bio: content.founders.guillaume,
+		// linkedinUrl: "#",
+	},
+	{
+		name: "Laurence",
+		role: "Co-Fondateur",
+		imageUrl: laurence,
+		bio: content.founders.laurence,
+		// linkedinUrl: "#",
+	},
+	{
+		name: "Boris",
+		role: "Co-Fondateur",
+		imageUrl: boris,
+		bio: content.founders.boris,
+		// linkedinUrl: "#",
 	},
 	// More people...
-];
+]
 
 export default function Founders() {
 	return (
@@ -30,18 +48,24 @@ export default function Founders() {
 					className="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-6 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 lg:gap-8"
 				>
 					{people.map((person) => (
-						<li key={person.name} className="rounded-2xl bg-gray-800 px-8 py-10">
-							<img
-								alt=""
+						<li
+							key={person.name}
+							className="rounded-2xl bg-gray-800 px-8 py-10"
+						>
+							<Image
+								alt="Fondateurs, collège les Papangues"
 								src={person.imageUrl}
 								className="mx-auto size-48 rounded-full md:size-56"
+								width={960}
+								height={1280}
 							/>
 							<h2 className="mt-6 text-base/7 font-semibold tracking-tight text-white">
 								{person.name}
 							</h2>
-							<p className="text-sm/6 text-gray-400">{person.role}</p>
+							{/* <p className="text-sm/6 text-gray-400">{person.role}</p> */}
+							<p className="mt-4 text-sm/6 text-gray-400">{person.bio}</p>
 							<ul role="list" className="mt-6 flex justify-center gap-x-6">
-								<li>
+								{/* <li>
 									<a
 										href={person.linkedinUrl}
 										className="text-gray-400 hover:text-gray-300"
@@ -60,12 +84,12 @@ export default function Founders() {
 											/>
 										</svg>
 									</a>
-								</li>
+								</li> */}
 							</ul>
 						</li>
 					))}
 				</ul>
 			</div>
 		</div>
-	);
+	)
 }

@@ -1,0 +1,191 @@
+{
+	"menu": {
+		"college": "Collège",
+		"values": "Valeurs",
+		"convictions": "Convictions",
+		"pedagogy": "Pédagogie",
+		"team": "Équipe",
+		"location": "Lieu",
+		"infos": "Infos Utiles"
+	},
+
+	"hero": {
+		"title": "Les Papangues",
+		"subtitle": "Apprendre . Explorer . Créer",
+		"description": "Notre collège Montessori, situé dans le nord de La Réunion, offre aux adolescents un cadre d’apprentissage unique, basé sur l’autonomie, la créativité et le respect du rythme de chacun.",
+		"buttons": {
+			"primary": "Découvrir le collège",
+			"secondary": "Nous contacter"
+		}
+	},
+	"college": {
+		"title": "Un collège Montessori à la Réunion",
+		"paragraphs": [
+			"Situé dans le Nord de l’île, notre collège Montessori offre aux adolescents un cadre d’apprentissage respectueux de leur rythme, autonomie et créativité.",
+			"Notre pédagogie, axée sur le développement personnel, intellectuel et manuel, permet à chaque élève de progresser sans pression et d'explorer ses talents à travers des projets concrets et des activités pratiques."
+		]
+	},
+	"cta": {
+		"college": {
+			"title": "Rejoignez l’aventure Montessori.",
+			"description": "Envie d’un collège différent où chaque adolescent peut grandir et s’épanouir ?",
+			"buttons": {
+				"primary": "Découvrir notre pédagogie",
+				"secondary": "Nous contacter"
+			}
+		},
+		"location": {
+			"title": "Vous connaissez un lieu adapté ?"
+		},
+		"infos": {
+			"title": "Une question ? Besoin d’informations ?"
+		}
+	},
+	"purpose": {
+		"title": "Apprendre, s’éveiller, agir",
+		"description": "Nous sommes le collège-lycée Montessori du Nord de La Réunion. Un lieu de vie, d’apprentissage et de partage. En mouvement, connecté à son environnement. Co-créé, co-géré et co-animé par les adolescents et les adultes. Offrant un cadre unique pour s’épanouir et grandir.",
+		"button": "Nos convictions"
+	},
+	"values": {
+		"title": "Nos valeurs",
+		"subtitle": "Ouvrons ensemble la voie vers un monde de liens, de paix et d’amour",
+		"list": [
+			{
+				"id": 1,
+				"name": "Développer l’estime de soi et oser révéler son potentiel.",
+				"value": "Confiance"
+			},
+			{
+				"id": 2,
+				"name": "Prendre conscience de soi et assumer ses choix.",
+				"value": "Responsabilité"
+			},
+			{
+				"id": 3,
+				"name": "S’émerveiller et apprendre de la diversité du monde.",
+				"value": "Ouverture"
+			},
+			{
+				"id": 4,
+				"name": "Trouver sa place et agir pour un avenir meilleur.",
+				"value": "Contribution"
+			}
+		]
+	},
+	"convictions": {
+		"title": "Nos convictions",
+		"subtitle": "Lorem ipsum",
+		"paragraphs": [
+			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
+			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+		]
+	},
+	"education": {
+		"title": "Notre promesse : la réussite scolaire et l’épanouissement de votre enfant."
+	},
+	"exigence": {
+		"title": "L'exigence académique",
+		"subtitle": "Un accompagnement académique personnalisé",
+		"paragraphs": [
+			"Nous proposons naturellement un accompagnement académique personnalisé, par des spécialistes et des éducateurs Montessori, en respectant, a minima, les attendus du Socle Commun.",
+			"Les apprentissages sont abordés sans évaluation compétitive. Un compte-rendu des acquis est établi pour les parents. Nous préparons les élèves aux épreuves du Brevet des collèges (DNB) en candidat libre."
+		]
+	},
+	"projects": {
+		"title": "Apprentissage par projet",
+		"subtitle": "Apprendre en réalisant des projets",
+		"paragraphs": [
+			"La pédagogie de Maria Montessori repose sur le projet. Chaque projet est une opportunité d’apprentissage transversal, tant académique que pratique.",
+			"Les adolescents choisissent leurs projets, et l’équipe pédagogique les accompagne pour les structurer et les approfondir, individuellement ou collectivement."
+		]
+	},
+	"hands": {
+		"title": "Travail des mains",
+		"subtitle": "Apprendre en expérimentant la vie réelle",
+		"paragraphs": [
+			"Nous proposons aussi des apprentissages pratiques, faisant expérimenter aux adolescents la « vie réelle » : cuisine, jardinage, bricolage, soins des animaux, travail extérieur, production et vente de leur production, etc..",
+			"Ces activités évolueront en fonction de l’intérêt des adolescents, de leurs propositions et des choix faits en concertation entre eux et l’équipe pédagogique."
+		]
+	},
+	"fulfillment": {
+		"title": "Épanouissement personnel",
+		"subtitle": "Développer sa sensibilité et sa créativité",
+		"paragraphs": [
+			"L’art et l’artisanat développent la sensibilité esthétique et émotionnelle, la créativité et le potentiel des adolescents.",
+			"L’éducation sensorielle, cœur de la pédagogie Montessori, favorise la connaissance de soi et la résilience. Nous proposons aussi des ateliers de développement personnel, de communication et de philosophie."
+		]
+	},
+	"responsibilities": {
+		"title": "Vie sociale et responsabilités",
+		"subtitle": "Apprendre ensemble et prendre des responsabilités",
+		"paragraphs": [
+			"Chaque semaine se déroule un conseil de vie de groupe, temps d’échange d’idées, de dialogue de vie démocratique permettant à chacun de pouvoir exprimer ses ressentis et ses incompréhensions.",
+			"En fonction des sensibilités et des progressions, les adolescents sont responsables des activités du groupe (projets, productions, vente, repas, propreté, jardin, potager, animaux, …). Ce qui leur permet d’acquérir compétences, confiance et reconnaissance par leurs pairs."
+		]
+	},
+	"founders": {
+		"title": "Les Fondateurs",
+		"paragraphs": [
+			"Nous sommes trois parents dont les enfants suivent une scolarité en école Montessori à Saint-Denis et Sainte-Marie. Conscients qu’aucun collège Montessori ne correspondait à nos attentes dans le Nord de l’île, nous avons décidé de créer nous-mêmes un établissement qui incarne nos valeurs et offre aux adolescents une pédagogie innovante, respectueuse de leur rythme et de leur développement personnel.",
+			"✨ Notre objectif : permettre aux jeunes de s’épanouir, développer leur autonomie et leur créativité, pour devenir des adultes éclairés, acteurs du monde de demain."
+		]
+	},
+	"team": {
+		"title": "Des éducateurs passionnés et spécialisés",
+		"paragraphs": [
+			"Notre équipe pédagogique est composée de deux éducateurs Montessori dès l’ouverture en août 2025, dont un anglophone natif. Nous faisons également appel à des spécialistes intervenants en fonction des besoins pour enrichir l’enseignement.",
+			"L’encadrement est complété par un directeur bénévole et un(e) assistant(e) à temps partiel."
+		]
+	},
+	"join": {
+		"title": "Une équipe au service des adolescents",
+		"subtitle": "Rejoignez l'équipe",
+		"description": "Nous construisons une communauté éducative engagée, à l’écoute des jeunes et de leur développement.",
+		"button": "Contactez-nous"
+	},
+	"location": {
+		"title": "Recherche active d’un espace",
+		"subtitle": "Un lieu à la hauteur de notre projet",
+		"description": "Nous sommes en recherche active d’un espace pour accueillir le Collège Montessori Les Papangues.",
+		"location": "📍 Localisation : le Nord de La Réunion (Saint-Denis - Sainte-Marie)",
+		"features": [
+			{
+				"name": "Superficie et type de bâtiment.",
+				"description": "Maison à louer. Minimum 150m² de surface intérieure. Idéalement de plain-pied."
+			},
+			{
+				"name": "Espaces essentiels.",
+				"description": "Grands espaces modulables pour les cours et les projets. Coin calme / bibliothèque pour favoriser la concentration. Salles spécifiques modulables (sciences, numérique, arts). Cuisine et espace restauration."
+			},
+			{
+				"name": "Extérieur et nature.",
+				"description": "Terrain de minimum 500m². Un potager et des espaces verts. Possibilité d’accueillir des animaux."
+			}
+		]
+	},
+	"infosHero": {
+		"title": "Tout ce qu’il faut savoir pour nous rejoindre",
+		"description": "Vous souhaitez en savoir plus sur l’organisation et le fonctionnement du Collège Montessori Les Papangues ? Retrouvez ici les informations essentielles : calendrier scolaire, horaires de classe et conditions d’inscription."
+	},
+	"infos": {
+		"title": "Informations Clés",
+		"features": [
+			{
+				"name": "Calendrier scolaire",
+				"description": "Nous respectons le calendrier académique de La Réunion. Les élèves suivent le rythme des vacances scolaires fixé par l’académie."
+			},
+			{
+				"name": "Horaires de classe",
+				"description": "Les élèves ont cours du lundi au vendredi. Mercredi matin uniquement."
+			},
+			{
+				"name": "Tarification et conditions d’inscription",
+				"description": "Les modalités d’inscription et les tarifs seront précisés prochainement."
+			}
+		]
+	},
+	"contact": {
+		"title": "Une question ? Envie d’échanger avec nous ?",
+		"description": "Nous sommes à votre disposition pour toute question sur notre pédagogie, l’inscription, ou notre recherche de lieu. N’hésitez pas à nous écrire, nous serons ravis d’échanger avec vous !"
+	}
+}

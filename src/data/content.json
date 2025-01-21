@@ -10,24 +10,23 @@
 	},
 
 	"hero": {
-		"title": "Les Papangues",
-		"subtitle": "Apprendre . Explorer . Créer",
-		"description": "Notre collège Montessori, situé dans le nord de La Réunion, offre aux adolescents un cadre d’apprentissage unique, basé sur l’autonomie, la créativité et le respect du rythme de chacun.",
+		"title": "",
+		"subtitle": "",
+		"description": "",
 		"buttons": {
 			"primary": "Découvrir le collège",
 			"secondary": "Nous contacter"
 		}
 	},
 	"college": {
-		"title": "Un collège Montessori à la Réunion",
+		"title": "Collège d'inspiration Montessori à la Réunion",
 		"paragraphs": [
-			"Situé dans le Nord de l’île, notre collège Montessori offre aux adolescents un cadre d’apprentissage respectueux de leur rythme, autonomie et créativité.",
-			"Notre pédagogie, axée sur le développement personnel, intellectuel et manuel, permet à chaque élève de progresser sans pression et d'explorer ses talents à travers des projets concrets et des activités pratiques."
+			"Situé dans le Nord de l’île, notre collège, établissement hors contrat, offre aux adolescents un cadre d’apprentissage respectueux de leur rythme et favorisant leur épanouissement personnel, leur développement intellectuel, manuel et émotionnel, leur autonomie et leur créativité."
 		]
 	},
 	"cta": {
 		"college": {
-			"title": "Rejoignez l’aventure Montessori.",
+			"title": "Rejoignez l’aventure Montessori",
 			"description": "Envie d’un collège différent où chaque adolescent peut grandir et s’épanouir ?",
 			"buttons": {
 				"primary": "Découvrir notre pédagogie",
@@ -42,32 +41,32 @@
 		}
 	},
 	"purpose": {
-		"title": "Apprendre, s’éveiller, agir",
-		"description": "Nous sommes le collège-lycée Montessori du Nord de La Réunion. Un lieu de vie, d’apprentissage et de partage. En mouvement, connecté à son environnement. Co-créé, co-géré et co-animé par les adolescents et les adultes. Offrant un cadre unique pour s’épanouir et grandir.",
+		"title": "Notre Raison d'Être",
+		"description": "Nous sommes un collège-lycée libre et alternatif du nord de La Réunion, Collectif de vie, d’apprentissages et de travail, en mouvement et en lien avec son environnement, Co-créé, co-géré et co-animé par les adultes et les adolescents, leur offrant le cadre pour éclore et devenir des adultes éclairés, futurs acteurs du changement.",
 		"button": "Nos convictions"
 	},
 	"values": {
 		"title": "Nos valeurs",
-		"subtitle": "Ouvrons ensemble la voie vers un monde de liens, de paix et d’amour",
+		"subtitle": "Créer toutes les conditions. Pour que l'adolescent …",
 		"list": [
 			{
 				"id": 1,
-				"name": "Développer l’estime de soi et oser révéler son potentiel.",
+				"name": "… développe son estime de soi, sa confiance en soi, envers les autres et la vie, et déploie tout son potentiel.",
 				"value": "Confiance"
 			},
 			{
 				"id": 2,
-				"name": "Prendre conscience de soi et assumer ses choix.",
+				"name": "… prenne conscience de lui-même, de ce qui l'anime et l'assume dans ses relations aux autres et au vivant.",
 				"value": "Responsabilité"
 			},
 			{
 				"id": 3,
-				"name": "S’émerveiller et apprendre de la diversité du monde.",
+				"name": "… s'appuie sur sa curiosité pour accueillir, s'émerveiller et se nourrir de la diversité de l'autre et du vivant.",
 				"value": "Ouverture"
 			},
 			{
 				"id": 4,
-				"name": "Trouver sa place et agir pour un avenir meilleur.",
+				"name": "… trouve sa singularité et sa place dans les mondes d'aujourd'hui et de demain.",
 				"value": "Contribution"
 			}
 		]
@@ -84,40 +83,42 @@
 		"title": "Notre promesse : la réussite scolaire et l’épanouissement de votre enfant."
 	},
 	"exigence": {
-		"title": "L'exigence académique",
-		"subtitle": "Un accompagnement académique personnalisé",
+		"title": "",
+		"subtitle": "L'exigence académique",
 		"paragraphs": [
-			"Nous proposons naturellement un accompagnement académique personnalisé, par des spécialistes et des éducateurs Montessori, en respectant, a minima, les attendus du Socle Commun.",
-			"Les apprentissages sont abordés sans évaluation compétitive. Un compte-rendu des acquis est établi pour les parents. Nous préparons les élèves aux épreuves du Brevet des collèges (DNB) en candidat libre."
+			"Nous proposons naturellement un accompagnement académique personnalisé, par des spécialistes des sujets abordés et des éducateurs Montessori, en respectant, a minima, les attendus du Socle Commun de connaissances et de compétences, tel que défini par l’État.",
+			"Les apprentissages sont abordés sans évaluation afin de ne pas encourager la compétitivité et la comparaison avec les autres. Un compte-rendu des acquis et des progrès des élèves est néanmoins établi aux parents.",
+			"Nous préparons les élèves aux épreuves du Brevet des collèges (DNB) officiel, avec toutes les bases académiques standards et les compléments de la méthode pédagogique Montessori, par le biais d’une inscription en candidat libre."
 		]
 	},
 	"projects": {
-		"title": "Apprentissage par projet",
-		"subtitle": "Apprendre en réalisant des projets",
+		"title": "",
+		"subtitle": "Apprentissage par projet",
 		"paragraphs": [
-			"La pédagogie de Maria Montessori repose sur le projet. Chaque projet est une opportunité d’apprentissage transversal, tant académique que pratique.",
-			"Les adolescents choisissent leurs projets, et l’équipe pédagogique les accompagne pour les structurer et les approfondir, individuellement ou collectivement."
+			"La pédagogie de Maria Montessori est basée sur le « projet ».",
+			"Chaque projet engagé est source d’apprentissages transversaux, tant académiques que pratiques. Les adolescents partagent leurs idées quant aux projets qu’ils souhaitent développer. L’équipe pédagogique les guide ensuite sur les différents sujets qu’ils devraient aborder au cours de ce projet, de manière individuelle et/ou collective.",
+			"Les projets peuvent être des projets pour la solidarité, l’environnement, mais aussi pour la réalisation d’un aménagement au sein de leur communauté, pour la réalisation d’une présentation, etc.."
 		]
 	},
 	"hands": {
-		"title": "Travail des mains",
-		"subtitle": "Apprendre en expérimentant la vie réelle",
+		"title": "",
+		"subtitle": "Travail des mains",
 		"paragraphs": [
-			"Nous proposons aussi des apprentissages pratiques, faisant expérimenter aux adolescents la « vie réelle » : cuisine, jardinage, bricolage, soins des animaux, travail extérieur, production et vente de leur production, etc..",
+			"Nous proposons aussi des apprentissages pratiques, faisant expérimenter aux adolescents la « vie réelle » : cuisine, jardinage, bricolage, soins des animaux, travail extérieur, production et vente de leur production, etc…",
 			"Ces activités évolueront en fonction de l’intérêt des adolescents, de leurs propositions et des choix faits en concertation entre eux et l’équipe pédagogique."
 		]
 	},
 	"fulfillment": {
-		"title": "Épanouissement personnel",
-		"subtitle": "Développer sa sensibilité et sa créativité",
+		"title": "",
+		"subtitle": "Épanouissement personnel",
 		"paragraphs": [
-			"L’art et l’artisanat développent la sensibilité esthétique et émotionnelle, la créativité et le potentiel des adolescents.",
-			"L’éducation sensorielle, cœur de la pédagogie Montessori, favorise la connaissance de soi et la résilience. Nous proposons aussi des ateliers de développement personnel, de communication et de philosophie."
+			"L’art et l’artisanat permettent d’éveiller et de développer la sensibilité esthétique et émotionnelle, la créativité et le potentiel de l’adolescent. C'est un principe fondamental de l’« éducation sensorielle » appliquée dans l’éducation Montessori.",
+			"Le cœur de notre projet pédagogique s’inscrit autour de l’épanouissement personnel de l’adolescent. Il aide à la connaissance du soi, à la construction du sens et à la résilience. Nous proposons ainsi des ateliers de développement personnel, de communication ou de philosophie."
 		]
 	},
 	"responsibilities": {
-		"title": "Vie sociale et responsabilités",
-		"subtitle": "Apprendre ensemble et prendre des responsabilités",
+		"title": "",
+		"subtitle": "Vie sociale et responsabilités",
 		"paragraphs": [
 			"Chaque semaine se déroule un conseil de vie de groupe, temps d’échange d’idées, de dialogue de vie démocratique permettant à chacun de pouvoir exprimer ses ressentis et ses incompréhensions.",
 			"En fonction des sensibilités et des progressions, les adolescents sont responsables des activités du groupe (projets, productions, vente, repas, propreté, jardin, potager, animaux, …). Ce qui leur permet d’acquérir compétences, confiance et reconnaissance par leurs pairs."
@@ -126,14 +127,16 @@
 	"founders": {
 		"title": "Les Fondateurs",
 		"paragraphs": [
-			"Nous sommes trois parents dont les enfants suivent une scolarité en école Montessori à Saint-Denis et Sainte-Marie. Conscients qu’aucun collège Montessori ne correspondait à nos attentes dans le Nord de l’île, nous avons décidé de créer nous-mêmes un établissement qui incarne nos valeurs et offre aux adolescents une pédagogie innovante, respectueuse de leur rythme et de leur développement personnel.",
-			"✨ Notre objectif : permettre aux jeunes de s’épanouir, développer leur autonomie et leur créativité, pour devenir des adultes éclairés, acteurs du monde de demain."
-		]
+			"Nous sommes trois parents dont les enfants suivent une scolarité en école Montessori à Saint-Denis et Sainte-Marie. Conscients qu’aucun collège Montessori ne correspondait à nos attentes dans le Nord de l’île, nous avons décidé de créer nous-mêmes un établissement qui incarne nos valeurs et offre une pédagogie innovante, respectueuse de leur rythme et de leur épanouissement personnel."
+		],
+		"guillaume": "Papa d’une fille et d’un garçon de 10 ans chacun, je porte aujourd’hui ce projet et assurerai la direction administrative du collège à son ouverture (de façon bénévole). Comptable et enseignant de formation, je travaille depuis plus de 15 ans pour la Direction Générale de l’Aviation Civile. Ma priorité : donner aux enfants un lieu où chacun sera respecté, écouté, accompagné, pour s’épanouir et apprendre dans les meilleures conditions.",
+		"laurence": "Maman d’un enfant de 12 ans, multi dys, TDAH, porteur de handicap, je suis vétérinaire et ingénieur des ponts, des eaux et forêts, je travaille actuellement à la Direction de la mer Sud Océan Indien en tant que cheffe de service Développement durable maritime. Sensible à l’environnement, spécialisée en conservation de la biodiversité, coach individuel et d’équipe ou encore décoratrice d’intérieur, je suis à l’origine du nouveau collège aux côtés de Guillaume et Boris auquel j’apporte mes capacités de synthèse, ma vision, ma motivation, mes compétences administratives et de gestion de projet. Je souhaite offrir aux enfants de La Réunion et à mon fils un lieu d’apprentissage qui éveille leurs potentiels dans le respect d’eux-même et dans la confiance.",
+		"boris": "Je suis papa de 2 filles de 7 et 9 ans qui sont dans une école Montessori depuis la maternelle.. J’aime les voir chaque jour partir avec le sourire et l’envie d’aller en classe pour apprendre de nouvelles choses. C’est ce qui m’anime dans ce projet : offrir aux adolescents un environnement d’apprentissage joyeux où ils pourront satisfaire leur curiosité naturelle et se révéler en tant que personne et au travers de leurs talents."
 	},
 	"team": {
 		"title": "Des éducateurs passionnés et spécialisés",
 		"paragraphs": [
-			"Notre équipe pédagogique est composée de deux éducateurs Montessori dès l’ouverture en août 2025, dont un anglophone natif. Nous faisons également appel à des spécialistes intervenants en fonction des besoins pour enrichir l’enseignement.",
+			"Notre équipe pédagogique est composée de deux éducateurs Montessori dès l’ouverture en août 2025. Nous faisons également appel à des spécialistes intervenants en fonction des besoins pour enrichir l’enseignement.",
 			"L’encadrement est complété par un directeur bénévole et un(e) assistant(e) à temps partiel."
 		]
 	},
