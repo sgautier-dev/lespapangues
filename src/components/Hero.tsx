@@ -1,5 +1,5 @@
 import Image from "next/image"
-import heroImg from "@/images/Adolescents_etoile_by Pexels.jpg"
+import heroImg from "@/images/fulllogo.png"
 import Link from "next/link"
 import content from "@/data/content.json"
 
@@ -11,7 +11,7 @@ export default function Hero() {
 				className="absolute inset-y-0 right-1/2 -z-10 -mr-96 w-[200%] origin-top-right skew-x-[-30deg] bg-white shadow-xl shadow-sky-600/10 ring-1 ring-sky-50 sm:-mr-80 lg:-mr-96"
 			/>
 			<div className="mx-auto max-w-7xl px-6 py-12 sm:py-24 lg:px-8 lg:py-32">
-				<div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-8">
+				<div className="mx-auto max-w-2xl lg:mx-0 lg:grid lg:max-w-none lg:grid-cols-2 lg:gap-x-16 lg:gap-y-8 xl:grid-cols-1 xl:grid-rows-1 xl:gap-x-32">
 					<h1 className="max-w-2xl text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl lg:col-span-2 xl:col-auto">
 						<span className="bg-gradient-to-b from-sky-100 via-sky-300 to-sky-500 bg-clip-text text-transparent ">
 							{content.hero.title}
@@ -43,7 +43,7 @@ export default function Hero() {
 					<Image
 						alt="Collège les Papangues"
 						src={heroImg}
-						className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 lg:max-w-none xl:row-span-2 xl:row-end-2 xl:mt-36"
+						className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 xl:row-span-2 xl:row-end-2"
 						width={1280}
 						height={719}
 					/>
