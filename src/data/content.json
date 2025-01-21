@@ -73,10 +73,10 @@
 	},
 	"convictions": {
 		"title": "Nos convictions",
-		"subtitle": "Lorem ipsum",
+		"subtitle": "La question ",
 		"paragraphs": [
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-			"Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione."
+			"« Quels enfants laissons-nous à notre planète ? » est au cœur de nos convictions. ",
+			"Nous croyons qu’un enfant épanoui, ancré dans ses valeurs, confiant en ses talents et sa capacité à imaginer et créer, deviendra un adulte à même de prendre naturellement soin du monde et du vivant qui l’entourent."
 		]
 	},
 	"education": {
