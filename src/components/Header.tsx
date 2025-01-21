@@ -45,14 +45,14 @@ export default function Header() {
 						<a
 							key={item.name}
 							href={item.href}
-							className="text-base/6 font-semibold text-white"
+							className="text-lg/6 font-semibold text-white"
 						>
 							{item.name}
 						</a>
 					))}
 				</div>
 				<div className="hidden lg:flex lg:flex-1 lg:justify-end">
-					<Link href="/contact" className="text-base/6 font-semibold text-white">
+					<Link href="/contact" className="text-lg/6 font-semibold text-white">
 						Contact <span aria-hidden="true">&rarr;</span>
 					</Link>
 				</div>

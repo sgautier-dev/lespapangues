@@ -67,7 +67,7 @@ export default function Footer() {
 			<div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
 				<nav
 					aria-label="Footer"
-					className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-base/6"
+					className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-lg/6"
 				>
 					{navigation.map((item) => (
 						<a

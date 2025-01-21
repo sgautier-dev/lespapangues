@@ -27,7 +27,7 @@ export default function Team() {
 						</p>
 					))}
 				</div>
-				<ul
+				{/* <ul
 					role="list"
 					className="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3"
 				>
@@ -74,7 +74,7 @@ export default function Team() {
 							</div>
 						</li>
 					))}
-				</ul>
+				</ul> */}
 			</div>
 		</div>
 	)
