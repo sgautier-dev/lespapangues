@@ -1,17 +1,17 @@
-import Image from "next/image"
+// import Image from "next/image"
 import content from "@/data/content.json"
-import team1 from "@/images/christina-wocintechchat-com-c-mgSuxqpzA-unsplash.jpg"
+// import team1 from "@/images/christina-wocintechchat-com-c-mgSuxqpzA-unsplash.jpg"
 
-const people = [
-	{
-		name: "Cécile Grondin",
-		role: "Professeur",
-		imageUrl: team1,
-		bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
-		linkedinUrl: "#",
-	},
-	// More people...
-]
+// const people = [
+// 	{
+// 		name: "Cécile Grondin",
+// 		role: "Professeur",
+// 		imageUrl: team1,
+// 		bio: "Ultricies massa malesuada viverra cras lobortis. Tempor orci hac ligula dapibus mauris sit ut eu. Eget turpis urna maecenas cras. Nisl dictum.",
+// 		linkedinUrl: "#",
+// 	},
+// 	// More people...
+// ]
 
 export default function Team() {
 	return (
