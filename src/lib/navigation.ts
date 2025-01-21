@@ -7,5 +7,5 @@ export const navigation = [
 	{ name: content.menu.pedagogy, href: "/pedagogie" },
 	{ name: content.menu.team, href: "/equipe" },
 	{ name: content.menu.location, href: "/lieu" },
-	{ name: content.menu.infos, href: "/infos" },
+	// { name: content.menu.infos, href: "/infos" },
 ]

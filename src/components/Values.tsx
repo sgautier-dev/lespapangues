@@ -44,7 +44,7 @@ export default function Values() {
 							key={value.id}
 							className="flex flex-col gap-y-3 border-l border-white/10 pl-6"
 						>
-							<dt className="text-sm/6">{value.name}</dt>
+							<dt className="text-base/6">{value.name}</dt>
 							<dd className="order-first text-3xl font-semibold tracking-tight">
 								{value.value}
 							</dd>
