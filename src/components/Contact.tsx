@@ -1,7 +1,87 @@
 import Image from "next/image"
 import heroImg from "@/images/Voie lactée_Evgeni Tcherkasski.jpg"
 import content from "@/data/content.json"
+import { ChangeEvent, FormEvent, useEffect, useRef, useState } from "react"
+import { useAction } from "next-safe-action/hooks"
+import { ArrowPathIcon } from "@heroicons/react/24/outline"
+import { DisplayServerActionResponse } from "./DisplayServerActionResponse"
+import sendEmail from "@/actions/sendEmail"
 export default function Contact() {
+	const [formData, setFormData] = useState({
+		firstName: "",
+		lastName: "",
+		email: "",
+		phone: "",
+		message: "",
+	})
+	const formRef = useRef<HTMLFormElement>(null)
+	const { execute, result, isExecuting } = useAction(sendEmail)
+
+	//hidding Google reCaptcha badge from page
+	useEffect(() => {
+		const style = document.createElement("style")
+		style.innerHTML = `
+		  .grecaptcha-badge {
+			visibility: hidden !important;
+		  }
+		`
+		document.head.appendChild(style)
+	}, [])
+
+	const getRecaptchaToken = async () => {
+		try {
+			const token = await window.grecaptcha.execute(
+				process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
+				{ action: "contact_form" }
+			)
+			return token
+		} catch (error) {
+			console.error(error)
+			return null
+		}
+	}
+
+	const handleChange = (
+		e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
+	) => {
+		const { name, value } = e.target
+		setFormData((prevData) => ({
+			...prevData,
+			[name]: value,
+		}))
+	}
+
+	const handleSubmit = async (e: FormEvent) => {
+		e.preventDefault()
+
+		const token = await getRecaptchaToken()
+
+		if (!token) {
+			alert(
+				"Erreur lors de la vérification de sécurité reCaptcha. Veuillez réessayer."
+			)
+
+			return
+		}
+
+		execute(formData)
+	}
+
+	useEffect(() => {
+		if (!isExecuting && result.data?.message) {
+			if (formRef.current) {
+				formRef.current.reset() // Reset form if success
+			}
+			setFormData({
+				firstName: "",
+				lastName: "",
+				email: "",
+				phone: "",
+				message: "",
+			})
+		}
+	}, [isExecuting, result])
+
 	return (
 		<div className="relative">
 			<div className="lg:absolute lg:inset-0 lg:left-1/2">
@@ -22,7 +102,7 @@ export default function Contact() {
 						<p className="mt-2 text-lg/8 text-gray-600">
 							{content.contact.description}
 						</p>
-						<form action="#" method="POST" className="mt-16">
+						<form ref={formRef} onSubmit={handleSubmit} className="mt-16">
 							<div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
 								<div>
 									<label
@@ -37,7 +117,10 @@ export default function Contact() {
 											name="first-name"
 											type="text"
 											autoComplete="given-name"
+											value={formData.firstName}
+											onChange={handleChange}
 											className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600"
+											required
 										/>
 									</div>
 								</div>
@@ -54,7 +137,10 @@ export default function Contact() {
 											name="last-name"
 											type="text"
 											autoComplete="family-name"
+											value={formData.lastName}
+											onChange={handleChange}
 											className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600"
+											required
 										/>
 									</div>
 								</div>
@@ -71,7 +157,10 @@ export default function Contact() {
 											name="email"
 											type="email"
 											autoComplete="email"
+											value={formData.email}
+											onChange={handleChange}
 											className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600"
+											required
 										/>
 									</div>
 								</div>
@@ -94,6 +183,8 @@ export default function Contact() {
 											name="phone"
 											type="tel"
 											autoComplete="tel"
+											value={formData.phone}
+											onChange={handleChange}
 											aria-describedby="phone-description"
 											className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600"
 										/>
@@ -117,8 +208,11 @@ export default function Contact() {
 											name="message"
 											rows={4}
 											aria-describedby="message-description"
+											value={formData.message}
+											onChange={handleChange}
 											className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600"
 											defaultValue={""}
+											required
 										/>
 									</div>
 								</div>
@@ -128,10 +222,15 @@ export default function Contact() {
 									type="submit"
 									className="rounded-md bg-sky-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-sky-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-sky-600"
 								>
-									Envoyer
+									{isExecuting ? (
+										<ArrowPathIcon className="h-5 w-5 animate-spin" />
+									) : (
+										"Envoyer"
+									)}
 								</button>
 							</div>
 						</form>
+						<DisplayServerActionResponse result={result} />
 					</div>
 				</div>
 			</div>
