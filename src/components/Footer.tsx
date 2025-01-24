@@ -97,6 +97,14 @@ export default function Footer() {
 					Copyright &copy; {new Date().getFullYear()}. Les Papangues. Tous
 					droits réservés.
 				</p>
+				<a
+					href="https://www.sgautier.dev/"
+					target="_blank"
+					rel="noopener noreferrer"
+					className="mt-10 text-center text-sm/6 text-white"
+				>
+					<p translate="no">Designed by SG</p>
+				</a>
 			</div>
 		</footer>
 	)
