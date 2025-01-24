@@ -29,7 +29,7 @@ const sendEmail = actionClient
 			await checkArcJetProtection()
 
 			await resend.emails.send({
-				from: "Les Papangues <bienvenue@lespapangues.com>",
+				from: "Les Papangues <onboarding@resend.dev>",
 				to: ["bienvenue@lespapangues.com"],
 				replyTo: email as string,
 				subject: `Message de ${firstName} ${lastName}`,

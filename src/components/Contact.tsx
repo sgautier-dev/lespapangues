@@ -1,3 +1,5 @@
+"use client"
+
 import Image from "next/image"
 import heroImg from "@/images/Voie lactée_Evgeni Tcherkasski.jpg"
 import content from "@/data/content.json"
@@ -6,6 +8,8 @@ import { useAction } from "next-safe-action/hooks"
 import { ArrowPathIcon } from "@heroicons/react/24/outline"
 import { DisplayServerActionResponse } from "./DisplayServerActionResponse"
 import sendEmail from "@/actions/sendEmail"
+import Script from "next/script"
+import useRecaptcha from "@/lib/hooks/useRecaptcha"
 export default function Contact() {
 	const [formData, setFormData] = useState({
 		firstName: "",
@@ -28,18 +32,7 @@ export default function Contact() {
 		document.head.appendChild(style)
 	}, [])
 
-	const getRecaptchaToken = async () => {
-		try {
-			const token = await window.grecaptcha.execute(
-				process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY,
-				{ action: "contact_form" }
-			)
-			return token
-		} catch (error) {
-			console.error(error)
-			return null
-		}
-	}
+	const { getRecaptchaToken } = useRecaptcha("contact_form")
 
 	const handleChange = (
 		e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -113,8 +106,8 @@ export default function Contact() {
 									</label>
 									<div className="mt-2.5">
 										<input
-											id="first-name"
-											name="first-name"
+											id="firstName"
+											name="firstName"
 											type="text"
 											autoComplete="given-name"
 											value={formData.firstName}
@@ -133,8 +126,8 @@ export default function Contact() {
 									</label>
 									<div className="mt-2.5">
 										<input
-											id="last-name"
-											name="last-name"
+											id="lastName"
+											name="lastName"
 											type="text"
 											autoComplete="family-name"
 											value={formData.lastName}
@@ -211,7 +204,6 @@ export default function Contact() {
 											value={formData.message}
 											onChange={handleChange}
 											className="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-sky-600"
-											defaultValue={""}
 											required
 										/>
 									</div>
@@ -234,6 +226,9 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
+			<Script
+				src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
+			/>
 		</div>
 	)
 }
