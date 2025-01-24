@@ -82,8 +82,7 @@ export default function Contact() {
 					alt="Contact, collège les Papangues"
 					src={heroImg}
 					className="h-64 w-full bg-gray-50 object-cover sm:h-80 lg:absolute lg:h-full"
-					width={855}
-					height={1280}
+					priority
 				/>
 			</div>
 			<div className="pb-24 pt-16 sm:pb-32 sm:pt-24 lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-2 lg:pt-32">

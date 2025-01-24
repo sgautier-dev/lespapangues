@@ -42,8 +42,6 @@ export default function Purpose() {
 					alt="Raison d'être, collège les Papangues"
 					src={heroImg}
 					className="aspect-[3/2] object-cover lg:aspect-auto lg:size-full"
-					width={1280}
-					height={719}
 				/>
 			</div>
 		</div>

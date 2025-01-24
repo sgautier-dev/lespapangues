@@ -9,8 +9,6 @@ export default function Projects() {
 				alt="Apprentissage par projet, collège les Papangues"
 				src={sectionImg}
 				className="h-56 w-full bg-gray-50 object-cover lg:absolute lg:inset-y-0 lg:right-0 lg:h-full lg:w-1/2"
-				width={1280}
-				height={853}
 			/>
 
 			<div className="mx-auto grid max-w-7xl lg:grid-cols-2">

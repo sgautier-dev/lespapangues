@@ -13,8 +13,7 @@ export default function Values() {
 				alt="Nos valeurs, collège les Papangues"
 				src={heroImg}
 				className="absolute inset-0 -z-10 size-full object-cover"
-				width={1280}
-				height={853}
+				priority
 			/>
 
 			<div className="relative mx-auto max-w-7xl px-6 lg:px-8">

@@ -11,8 +11,6 @@ export default function Join() {
 					alt="Rejoindre, Collège les Papangues"
 					src={heroImg}
 					className="size-full object-cover"
-					width={1920}
-					height={1282}
 				/>
 				<svg
 					viewBox="0 0 926 676"

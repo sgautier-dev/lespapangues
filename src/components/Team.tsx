@@ -40,8 +40,6 @@ export default function Team() {
 								alt="Equipe, collège les Papangues"
 								src={person.imageUrl}
 								className="aspect-4/5 w-52 flex-none rounded-2xl object-cover"
-								width={1920}
-								height={1282}
 							/>
 							<div className="max-w-xl flex-auto">
 								<h3 className="text-lg/8 font-semibold tracking-tight text-gray-900">

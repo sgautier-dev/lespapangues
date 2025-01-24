@@ -56,8 +56,7 @@ export default function Founders() {
 								alt="Fondateurs, collège les Papangues"
 								src={person.imageUrl}
 								className="mx-auto size-48 rounded-full md:size-56"
-								width={960}
-								height={1280}
+								priority
 							/>
 							<h2 className="mt-6 text-base/7 font-semibold tracking-tight text-white">
 								{person.name}

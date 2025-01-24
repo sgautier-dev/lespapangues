@@ -40,8 +40,7 @@ export default function Hero() {
 						alt="Collège les Papangues"
 						src={heroImg}
 						className="mt-10 aspect-[6/5] w-full max-w-lg rounded-2xl object-cover sm:mt-16 lg:mt-0 xl:row-span-2 xl:row-end-2"
-						width={1280}
-						height={719}
+						priority
 					/>
 				</div>
 			</div>

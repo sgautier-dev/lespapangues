@@ -58,8 +58,7 @@ export default function Location() {
 						alt="Lieu, collège les Papangues"
 						src={heroImg}
 						className="w-[48rem] max-w-none rounded-xl ring-1 shadow-xl ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-						width={1920}
-						height={1280}
+						priority
 					/>
 				</div>
 			</div>

@@ -24,9 +24,6 @@ export default function Header() {
 							alt="Collège les Papangues"
 							src={logo}
 							className="h-16 w-auto"
-							width={1280}
-							height={681}
-							priority
 						/>
 					</Link>
 				</div>
@@ -71,9 +68,6 @@ export default function Header() {
 								alt="Collège les Papangues"
 								src={logo}
 								className="h-16 w-auto"
-								width={1280}
-								height={681}
-								priority
 							/>
 						</Link>
 						<button

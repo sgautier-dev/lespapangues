@@ -30,8 +30,6 @@ export default function Hands() {
 										alt="Travail des mains, collège les Papangues"
 										src={sectionImg1}
 										className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-										width={1280}
-										height={848}
 									/>
 									<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
 								</div>
@@ -42,8 +40,6 @@ export default function Hands() {
 										alt="Travail des mains, collège les Papangues"
 										src={sectionImg1}
 										className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-										width={1280}
-										height={848}
 									/>
 									<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
 								</div>
@@ -53,8 +49,6 @@ export default function Hands() {
 										alt="Travail des mains, collège les Papangues"
 										src={sectionImg2}
 										className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-										width={1280}
-										height={853}
 									/>
 									<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
 								</div>
@@ -63,8 +57,6 @@ export default function Hands() {
 										alt="Travail des mains, collège les Papangues"
 										src={sectionImg3}
 										className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-										width={1280}
-										height={859}
 									/>
 									<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
 								</div>
@@ -75,8 +67,6 @@ export default function Hands() {
 										alt="Travail des mains, collège les Papangues"
 										src={sectionImg3}
 										className="aspect-2/3 w-full rounded-xl bg-gray-900/5 object-cover shadow-lg"
-										width={1280}
-										height={859}
 									/>
 									<div className="pointer-events-none absolute inset-0 rounded-xl ring-1 ring-gray-900/10 ring-inset" />
 								</div>
