@@ -8,8 +8,7 @@ import { useAction } from "next-safe-action/hooks"
 import { ArrowPathIcon } from "@heroicons/react/24/outline"
 import { DisplayServerActionResponse } from "./DisplayServerActionResponse"
 import sendEmail from "@/actions/sendEmail"
-import Script from "next/script"
-import useRecaptcha from "@/lib/hooks/useRecaptcha"
+
 export default function Contact() {
 	const [formData, setFormData] = useState({
 		firstName: "",
@@ -20,19 +19,6 @@ export default function Contact() {
 	})
 	const formRef = useRef<HTMLFormElement>(null)
 	const { execute, result, isExecuting } = useAction(sendEmail)
-
-	//hidding Google reCaptcha badge from page
-	useEffect(() => {
-		const style = document.createElement("style")
-		style.innerHTML = `
-		  .grecaptcha-badge {
-			visibility: hidden !important;
-		  }
-		`
-		document.head.appendChild(style)
-	}, [])
-
-	const { getRecaptchaToken } = useRecaptcha("contact_form")
 
 	const handleChange = (
 		e: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
@@ -46,16 +32,6 @@ export default function Contact() {
 
 	const handleSubmit = async (e: FormEvent) => {
 		e.preventDefault()
-
-		const token = await getRecaptchaToken()
-
-		if (!token) {
-			alert(
-				"Erreur lors de la vérification de sécurité reCaptcha. Veuillez réessayer."
-			)
-
-			return
-		}
 
 		execute(formData)
 	}
@@ -98,7 +74,7 @@ export default function Contact() {
 							<div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
 								<div>
 									<label
-										htmlFor="first-name"
+										htmlFor="firstName"
 										className="block text-sm/6 font-semibold text-gray-900"
 									>
 										Prénom
@@ -118,7 +94,7 @@ export default function Contact() {
 								</div>
 								<div>
 									<label
-										htmlFor="last-name"
+										htmlFor="lastName"
 										className="block text-sm/6 font-semibold text-gray-900"
 									>
 										Nom
@@ -225,9 +201,6 @@ export default function Contact() {
 					</div>
 				</div>
 			</div>
-			<Script
-				src={`https://www.google.com/recaptcha/api.js?render=${process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}`}
-			/>
 		</div>
 	)
 }
